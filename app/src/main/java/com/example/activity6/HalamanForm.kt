@@ -40,6 +40,9 @@ fun HalamanForm(
     var phoneText by remember {
         mutableStateOf("")
     }
+
+    var listData: MutableList<String> = mutableListOf(namaText, alamatText, phoneText)
+
     Column(
         modifier = Modifier.fillMaxSize(),
         verticalArrangement = Arrangement.Center,
@@ -81,12 +84,12 @@ fun HalamanForm(
         Row (modifier = Modifier.fillMaxWidth(),
             horizontalArrangement = Arrangement.SpaceEvenly
         ){
-            Button(onClick = { /*TODO*/ }) {
-                Text(text = stringResource(id = R.string.submit_button))
+            Button(onClick = {onBackButtonCLicked}) {
+                Text(text = stringResource(id = R.string.back_button))
             }
 
-            Button(onClick = { /*TODO*/ }) {
-                Text(text = stringResource(id = R.string.back_button))
+            Button(onClick = {onSubmitButtonClicked(listData)}) {
+                Text(text = stringResource(id = R.string.submit_button))
             }
         }
     }
