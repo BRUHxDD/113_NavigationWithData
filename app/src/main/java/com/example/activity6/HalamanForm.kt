@@ -26,7 +26,10 @@ import androidx.compose.ui.unit.sp
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun HalamanForm(){
+fun HalamanForm(
+    onSubmitButtonClicked: (MutableList<String>) -> Unit,
+    onBackButtonCLicked: () -> Unit
+){
 
     var  namaText by remember {
         mutableStateOf("")
