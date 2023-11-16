@@ -19,4 +19,7 @@
     <string name="phoneUser">No Telp</string>
     <string name="submit_button">Submit</string>
     <string name="namaOrder">Nama Pemesanan</string>
+    <string name="quantity">Jumlah</string>
+    <string name="alamatOrder">Alamat Pemesanan : </string>
+    <string name="phoneOrder">No Telp Pemesanan : </string>
 </resources>
